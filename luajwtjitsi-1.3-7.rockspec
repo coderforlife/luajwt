@@ -1,9 +1,9 @@
 package = "luajwtjitsi"
-version = "1.3-7"
+version = "1.3-8"
 
 source = {
 	url = "git://github.com/jitsi/luajwt/",
-	tag = "v1.7"
+	tag = "v1.8"
 }
 
 description = {
@@ -15,8 +15,8 @@ description = {
 
 dependencies = {
 	"lua >= 5.1",
-	"luacrypto >= 0.3.2-1",
-	"lua-cjson >= 2.1.0",
+	"luaossl >= 20151221-0",
+	"lua-cjson-ol >= 1.0-1",
 	"lbase64 >= 20120807-3"
 }
 
