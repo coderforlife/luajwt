@@ -17,9 +17,9 @@ local function signHS(data, key, algo)
 end
 
 local alg_sign = {
-	['HS256'] = function(data, key) return hmac_digest(data, key, 'sha256') end,
-	['HS384'] = function(data, key) return hmac_digest(data, key, 'sha384') end,
-	['HS512'] = function(data, key) return hmac_digest(data, key, 'sha512') end,
+	['HS256'] = function(data, key) return signHS(data, key, 'sha256') end,
+	['HS384'] = function(data, key) return signHS(data, key, 'sha384') end,
+	['HS512'] = function(data, key) return signHS(data, key, 'sha512') end,
 	['RS256'] = function(data, key) return signRS(data, key, 'sha256') end,
 	['RS384'] = function(data, key) return signRS(data, key, 'sha384') end,
 	['RS512'] = function(data, key) return signRS(data, key, 'sha512') end
